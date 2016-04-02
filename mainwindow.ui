@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1010</width>
+    <height>516</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>档案管理</string>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tabReg">
+       <attribute name="title">
+        <string>登记信息</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QGroupBox" name="Info">
+            <layout class="QGridLayout" name="gridLayout">
+             <item row="0" column="0">
+              <widget class="QLineEdit" name="lineEditCode">
+               <property name="inputMethodHints">
+                <set>Qt::ImhLatinOnly</set>
+               </property>
+               <property name="placeholderText">
+                <string>义工编号：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEditHome">
+               <property name="placeholderText">
+                <string>籍贯：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLineEdit" name="lineEditName">
+               <property name="placeholderText">
+                <string>姓名：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QComboBox" name="comboBoxType">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+               <item>
+                <property name="text">
+                 <string>在山上</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>已退单</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>已出家</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>黑名单</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>去其他寺院</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QComboBox" name="comboBoxGender">
+               <item>
+                <property name="text">
+                 <string>男</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>女</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="lineEditEmail">
+               <property name="inputMethodHints">
+                <set>Qt::ImhEmailCharactersOnly</set>
+               </property>
+               <property name="placeholderText">
+                <string>电子邮件：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLineEdit" name="lineEditPhone">
+               <property name="placeholderText">
+                <string>手机号：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <widget class="QLabel" name="label_3">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>常住日期：</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QDateEdit" name="dateEditStarttime">
+                 <property name="displayFormat">
+                  <string>yyyy-MM-dd</string>
+                 </property>
+                 <property name="calendarPopup">
+                  <bool>true</bool>
+                 </property>
+                 <property name="date">
+                  <date>
+                   <year>2016</year>
+                   <month>1</month>
+                   <day>1</day>
+                  </date>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="4" column="0" rowspan="2">
+              <layout class="QHBoxLayout" name="horizontalLayout">
+               <item>
+                <widget class="QLabel" name="label_2">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>生日：</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QDateEdit" name="dateEditBirthday">
+                 <property name="displayFormat">
+                  <string>yyyy-MM-dd</string>
+                 </property>
+                 <property name="calendarPopup">
+                  <bool>true</bool>
+                 </property>
+                 <property name="date">
+                  <date>
+                   <year>2016</year>
+                   <month>1</month>
+                   <day>1</day>
+                  </date>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="4" column="1">
+              <widget class="QLineEdit" name="lineEditNumplate">
+               <property name="inputMethodHints">
+                <set>Qt::ImhLatinOnly</set>
+               </property>
+               <property name="placeholderText">
+                <string>车牌号：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1" rowspan="2">
+              <widget class="QLineEdit" name="lineEditHobby">
+               <property name="placeholderText">
+                <string>特长：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0">
+              <widget class="QLineEdit" name="lineEditRace">
+               <property name="placeholderText">
+                <string>民族：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="0">
+              <widget class="QLineEdit" name="lineEditPid">
+               <property name="placeholderText">
+                <string>身份证号：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <item>
+                <widget class="QLabel" name="label">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>初次共修班上课时间：</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QDateEdit" name="dateEditGxbxyFirstDate">
+                 <property name="acceptDrops">
+                  <bool>false</bool>
+                 </property>
+                 <property name="displayFormat">
+                  <string>yyyy-MM-dd</string>
+                 </property>
+                 <property name="calendarPopup">
+                  <bool>true</bool>
+                 </property>
+                 <property name="date">
+                  <date>
+                   <year>2016</year>
+                   <month>1</month>
+                   <day>1</day>
+                  </date>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="8" column="0">
+              <widget class="QComboBox" name="comboBoxHealth">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+               <item>
+                <property name="text">
+                 <string>良好</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>一般</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>重病</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="8" column="1" rowspan="2">
+              <widget class="QComboBox" name="comboBoxGxbxy">
+               <item>
+                <property name="text">
+                 <string extracomment="共修班学员">是 (共修学员)</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string extracomment="不是共修班学员">否 (共修学员)</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="9" column="0" rowspan="2">
+              <widget class="QComboBox" name="comboBoxMarrage">
+               <item>
+                <property name="text">
+                 <string>未婚</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>已婚</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>离异</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="10" column="1">
+              <widget class="QLineEdit" name="lineEditor">
+               <property name="placeholderText">
+                <string>记录人：</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBoxDetail">
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <widget class="QLineEdit" name="lineEditEdu">
+               <property name="placeholderText">
+                <string>受教育情况：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEditJob">
+               <property name="placeholderText">
+                <string>工作信息：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEditReason">
+               <property name="placeholderText">
+                <string>来龙泉寺的因缘：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEditRelationship">
+               <property name="placeholderText">
+                <string notr="true">社会关系详情：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEditEmergency">
+               <property name="placeholderText">
+                <string>紧急联系人：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEditExperience">
+               <property name="placeholderText">
+                <string>学佛经历(皈依时间、皈依寺庙、学习方式、研读经典):</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEditChargefor">
+               <property name="placeholderText">
+                <string>在本寺承担部组事项:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEditRecord">
+               <property name="placeholderText">
+                <string>评估详情：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEditNote">
+               <property name="placeholderText">
+                <string>其他信息：</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>1</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QToolButton" name="toolButtonSave">
+            <property name="text">
+             <string>保存信息</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabQuery">
+       <attribute name="title">
+        <string>查询信息</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1010</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(230, 230, 230);</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>lineEditCode</tabstop>
+  <tabstop>lineEditName</tabstop>
+  <tabstop>comboBoxGender</tabstop>
+  <tabstop>lineEditPhone</tabstop>
+  <tabstop>dateEditBirthday</tabstop>
+  <tabstop>lineEditRace</tabstop>
+  <tabstop>lineEditPid</tabstop>
+  <tabstop>comboBoxHealth</tabstop>
+  <tabstop>comboBoxMarrage</tabstop>
+  <tabstop>lineEditHome</tabstop>
+  <tabstop>comboBoxType</tabstop>
+  <tabstop>lineEditEmail</tabstop>
+  <tabstop>dateEditStarttime</tabstop>
+  <tabstop>lineEditNumplate</tabstop>
+  <tabstop>lineEditHobby</tabstop>
+  <tabstop>dateEditGxbxyFirstDate</tabstop>
+  <tabstop>comboBoxGxbxy</tabstop>
+  <tabstop>lineEditor</tabstop>
+  <tabstop>lineEditEdu</tabstop>
+  <tabstop>lineEditJob</tabstop>
+  <tabstop>lineEditReason</tabstop>
+  <tabstop>lineEditRelationship</tabstop>
+  <tabstop>lineEditEmergency</tabstop>
+  <tabstop>lineEditExperience</tabstop>
+  <tabstop>lineEditChargefor</tabstop>
+  <tabstop>lineEditRecord</tabstop>
+  <tabstop>lineEditNote</tabstop>
+  <tabstop>toolButtonSave</tabstop>
+  <tabstop>tabWidget</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
